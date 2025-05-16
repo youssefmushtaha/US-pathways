@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pathway to the USA - Your Guide to American Life</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-plane-arrival me-2"></i>Pathway to the USA
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/visa.html">
+                            <i class="fas fa-passport me-2"></i>Visa & Immigration
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/housing.html">
+                            <i class="fas fa-home me-2"></i>Housing
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/employment.html">
+                            <i class="fas fa-briefcase me-2"></i>Employment
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/education.html">
+                            <i class="fas fa-graduation-cap me-2"></i>Education
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/healthcare.html">
+                            <i class="fas fa-hospital me-2"></i>Healthcare
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/culture.html">
+                            <i class="fas fa-globe me-2"></i>Cultural Integration
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/contact.html">
+                            <i class="fas fa-envelope me-2"></i>Contact Us
+                        </a>
+                    </li>
+                </ul>
+                <div class="language-selector ms-3">
+                    <select onchange="window.location.href=this.value;" class="form-select form-select-sm bg-light border-0">
+                        <option value="#">🌐 Language</option>
+                        <option value="https://translate.google.com/translate?hl=en&sl=en&tl=ar&u=https://yousif-elfeky.github.io/pathways-us-website/index.html">
+                            🇪🇬 العربية
+                        </option>
+                        <option value="https://yousif-elfeky.github.io/pathways-us-website/index.html">
+                            🇺🇸 English
+                        </option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-section main-hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h1 class="display-4 text-white fw-bold">Welcome to Pathway to the USA</h1>
+                    <p class="lead text-white mb-4">Your comprehensive guide for Egyptian immigrants navigating life in the United States</p>
+                    <a href="#features" class="btn btn-primary btn-lg">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- After Hero Section and before Features Section -->
+    <section class="who-we-are py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12">
+                    <h2 class="mb-4">
+                        <i class="fas fa-users text-primary me-2"></i>Who We Are
+                    </h2>
+                    <p class="lead mb-4">
+                        We are a dedicated group of Egyptian students who have experienced firsthand the challenges of moving to the United States. Our journey inspired us to create this platform to help others navigate their path to American life.
+                    </p>
+                    <div class="mb-4">
+                        <h5 class="mb-3">Our Mission</h5>
+                        <p>
+                            Having walked this path ourselves, we understand the unique challenges Egyptian immigrants face. From navigating visa applications to adapting to American culture, we're here to provide the guidance we wish we had when we started our journey.
+                        </p>
+                    </div>
+                    <div class="mb-4">
+                        <h5 class="mb-3">What Makes Us Different</h5>
+                        <ul class="list-unstyled">
+                            <li class="mb-2">
+                                <i class="fas fa-check-circle text-primary me-2"></i>
+                                First-hand experience as Egyptian students in the USA
+                            </li>
+                            <li class="mb-2">
+                                <i class="fas fa-check-circle text-primary me-2"></i>
+                                Culturally sensitive guidance and support
+                            </li>
+                            <li class="mb-2">
+                                <i class="fas fa-check-circle text-primary me-2"></i>
+                                Bilingual resources in both English and Arabic
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle text-primary me-2"></i>
+                                Up-to-date information based on current regulations
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <div id="team" class="team-members mt-5 mb-5">
+            <h3 class="text-center mb-4">Meet Our Team</h3>
+            <div class="row g-4">
+                <!-- First row: 2 members with different sizes -->
+                <div class="col-md-7">
+                    <div class="card team-card h-100">
+                        <div class="card-body text-center">
+                            <div class="mb-3">
+                                <i class="fas fa-user-circle fa-4x text-primary"></i>
+                            </div>
+                            <h5 class="card-title">Hamza ElHashemy</h5>
+                            <p class="card-text text-muted">Team Leader</p>
+                            <p class="small">
+                                <i class="fas fa-envelope me-2"></i>
+                                <a href="mailto:elhashemy@aucegypt.edu">elhashemy@aucegypt.edu</a>
+                          
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="card team-card h-100">
+                        <div class="card-body text-center">
+                            <div class="mb-3">
+                                <i class="fas fa-user-circle fa-4x text-primary"></i>
+                            </div>
+                            <h5 class="card-title">Hamza Salama</h5>
+                            <p class="card-text text-muted">Team Member</p>
+                            <p class="small">
+                                <i class="fas fa-envelope me-2"></i>
+                                <a href="mailto:hamzasalama@aucegypt.edu">hamzasalama@aucegypt.edu</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Second row: 3 members with different sizes -->
+                <div class="col-md-4">
+                    <div class="card team-card h-100">
+                        <div class="card-body text-center">
+                            <div class="mb-3">
+                                <i class="fas fa-user-circle fa-4x text-primary"></i>
+                            </div>
+                            <h5 class="card-title">Rafaat Shabana</h5>
+                            <p class="card-text text-muted">Team Member</p>
+                            <p class="small">
+                                <i class="fas fa-envelope me-2"></i>
+                                <a href="mailto:raafat.shabana@aucegypt.edu">raafat.shabana@aucegypt.edu</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card team-card h-100">
+                        <div class="card-body text-center">
+                            <div class="mb-3">
+                                <i class="fas fa-user-circle fa-4x text-primary"></i>
+                            </div>
+                            <h5 class="card-title">Ali Battouty</h5>
+                            <p class="card-text text-muted">Team Member</p>
+                            <p class="small">
+                                <i class="fas fa-envelope me-2"></i>
+                                <a href="mailto:abattouty@aucegypt.edu">abattouty@aucegypt.edu</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="card team-card h-100">
+                        <div class="card-body text-center">
+                            <div class="mb-3">
+                                <i class="fas fa-user-circle fa-4x text-primary"></i>
+                            </div>
+                                  <h5 class="card-title">Yousif Elfeky</h5>
+                            <p class="card-text text-muted">Team Member</p>
+                            <p class="small">
+                                <i class="fas fa-envelope me-2"></i>
+                                <a href="mailto:yousifjoo@aucegypt.edu">yousifjoo@aucegypt.edu</a>
+                           
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <!-- Features Section -->
+        <section id="features" class="features py-5 position-relative">
+            <div class="container">
+                <h2 class="text-center mb-5">Our Comprehensive Resources</h2>
+                <div class="row g-4">
+                    <!-- Visa & Immigration -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100">
+                            <div class="card-body text-center">
+                                <i class="fas fa-passport feature-icon"></i>
+                                <h3 class="card-title">Visa & Immigration</h3>
+                                <p class="card-text">
+                                    Get expert guidance through every step of your immigration journey. We provide detailed information about visa categories, help you understand complex immigration procedures, and offer step-by-step assistance with documentation. Our resources include embassy interview preparation, timeline planning, and post-arrival registration requirements.
+                                </p>
+                                <a href="pages/visa.html" class="btn btn-primary mt-3">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Housing -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100">
+                            <div class="card-body text-center">
+                                <i class="fas fa-home feature-icon"></i>
+                                <h3 class="card-title">Housing Guide</h3>
+                                <p class="card-text">
+                                    Navigate the American housing market with confidence. Learn about different neighborhoods, understand rental agreements, and explore home buying options. We provide insights on credit requirements, typical housing costs, and help you understand local regulations. Get tips on working with real estate agents and avoiding common pitfalls.
+                                </p>
+                                <a href="pages/housing.html" class="btn btn-primary mt-3">Find Housing</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Employment -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100">
+                            <div class="card-body text-center">
+                                <i class="fas fa-briefcase feature-icon"></i>
+                                <h3 class="card-title">Employment</h3>
+                                <p class="card-text">
+                                    Discover opportunities in the American job market. Learn about professional networking, industry-specific job boards, and workplace culture. Get guidance on resume writing tailored to U.S. standards, interview preparation, and salary negotiations. Understand employment rights, tax obligations, and professional development opportunities.
+                                </p>
+                                <a href="pages/employment.html" class="btn btn-primary mt-3">Find Work</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Education -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100">
+                            <div class="card-body text-center">
+                                <i class="fas fa-graduation-cap feature-icon"></i>
+                                <h3 class="card-title">Education</h3>
+                                <p class="card-text">
+                                    Understand the American education system from K-12 to higher education. Learn about school districts, standardized testing, and college admissions processes. Explore scholarship opportunities, student visa requirements, and degree recognition procedures. Get information about language programs and continuing education options.
+                                </p>
+                                <a href="pages/education.html" class="btn btn-primary mt-3">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Healthcare -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100">
+                            <div class="card-body text-center">
+                                <i class="fas fa-hospital feature-icon"></i>
+                                <h3 class="card-title">Healthcare</h3>
+                                <p class="card-text">
+                                    Master the complexities of the U.S. healthcare system. Learn about health insurance plans, coverage options, and how to choose the right provider. Understand emergency services, preventive care, and prescription medication coverage. Get information about mental health resources and specialized medical services.
+                                </p>
+                                <a href="pages/healthcare.html" class="btn btn-primary mt-3">Explore Healthcare</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cultural Integration -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100">
+                            <div class="card-body text-center">
+                                <i class="fas fa-globe feature-icon"></i>
+                                <h3 class="card-title">Cultural Integration</h3>
+                                <p class="card-text">
+                                    Bridge cultural gaps and thrive in American society. Explore American customs, traditions, and social norms. Connect with local Egyptian communities, find cultural events, and learn about religious accommodations. Access resources for language improvement and cultural adaptation strategies.
+                                </p>
+                                <a href="pages/culture.html" class="btn btn-primary mt-3">Discover More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us Section -->
+        <section class="why-choose-us py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-5">
+                    <i class="fas fa-star text-primary me-2"></i>Why Choose Our Platform?
+                </h2>
+                <div class="row g-4">
+                    <div class="col-md-6 mb-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <div class="d-flex align-items-start">
+                                    <i class="fas fa-check-circle text-primary me-3 mt-1 fa-2x"></i>
+                                    <div>
+                                        <h4>Comprehensive Resources</h4>
+                                        <p>Everything you need to know about relocating to the USA in one place</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <div class="d-flex align-items-start">
+                                    <i class="fas fa-users text-primary me-3 mt-1 fa-2x"></i>
+                                    <div>
+                                        <h4>Community Support</h4>
+                                        <p>Connect with other Egyptian immigrants and share experiences</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <div class="d-flex align-items-start">
+                                    <i class="fas fa-language text-primary me-3 mt-1 fa-2x"></i>
+                                    <div>
+                                        <h4>Bilingual Support</h4>
+                                        <p>Resources available in both English and Arabic</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <div class="d-flex align-items-start">
+                                    <i class="fas fa-clock text-primary me-3 mt-1 fa-2x"></i>
+                                    <div>
+                                        <h4>24/7 Assistance</h4>
+                                        <p>Round-the-clock support for all your immigration needs</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="cta py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto text-center">
+                        <h2 class="mb-4">Ready to Start Your Journey?</h2>
+                        <p class="lead mb-4">Let us help you make your American dream a reality</p>
+                        <a href="pages/contact.html" class="btn btn-primary btn-lg">
+                            <i class="fas fa-paper-plane me-2"></i>Contact Us Today
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5><i class="fas fa-plane-arrival me-2"></i>Pathway to the USA</h5>
+                    <p>Supporting Egyptian immigrants in their journey to the United States</p>
+                    <div class="social-links">
+                        <a href="#" class="text-light me-3"><i class="fab fa-facebook fa-lg"></i></a>
+                        <a href="#" class="text-light me-3"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="#" class="text-light me-3"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a href="#" class="text-light"><i class="fab fa-linkedin fa-lg"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6 text-md-end">
+                </div>
+            </div>
+            <div class="text-center mt-3">
+                <p>&copy; 2024 Pathway to the USA. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
